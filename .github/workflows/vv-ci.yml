@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Generate requirements
+      - name: Generate requirements and expected structure
         run: python scripts/generate_requirements.py -i "Input CFR File/CFR-117.130.md" -o requirements.json -c "21 CFR 117.130" -s expected_structure.json -n 10
 
       - name: Generate test cases
