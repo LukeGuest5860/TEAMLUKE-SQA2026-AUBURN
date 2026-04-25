@@ -17,6 +17,8 @@ import json
 import re
 import subprocess
 import time
+import urllib.request
+import urllib.error
 from pathlib import Path
 
 
@@ -73,16 +75,40 @@ Rules:
 
 
 def call_ollama(model, prompt):
-    result = subprocess.run(
-        ["ollama", "run", model, prompt],
-        capture_output=True,
-        text=True,
-        check=True
+    """
+    Call Ollama through its local HTTP API instead of `ollama run`.
+
+    This avoids terminal cursor-control / ANSI escape codes that can appear
+    in subprocess stdout and break JSON parsing.
+    """
+    payload = json.dumps({
+        "model": model,
+        "prompt": prompt,
+        "stream": False,
+        "options": {
+            "temperature": 0.2
+        }
+    }).encode("utf-8")
+
+    request = urllib.request.Request(
+        "http://localhost:11434/api/generate",
+        data=payload,
+        headers={"Content-Type": "application/json"},
+        method="POST"
     )
-    return result.stdout.strip()
+
+    with urllib.request.urlopen(request, timeout=300) as response:
+        data = json.loads(response.read().decode("utf-8"))
+
+    return data.get("response", "").strip()
+
+
+def strip_ansi_codes(text):
+    return re.sub(r"\x1b\[[0-9;?]*[A-Za-z]", "", text)
 
 
 def extract_json_object(text):
+    text = strip_ansi_codes(text)
     text = text.strip()
 
     text = text.replace("```json", "").replace("```", "").strip()

@@ -2,7 +2,7 @@
 # Verification & Validation Project - 21 CFR Atomic Rules
 
 Team name: TEAMNAME  
-Team members: Luke Guest, N/A, N/A
+Team members: Luke Guest
 
 This repository completes the CFR V&V project for 21 CFR 117.130. It parses a CFR markdown file into atomic requirements, selects 10 atomic rules, builds the expected parent-to-child structure, generates minimal test cases, validates the outputs, and records forensic logs.
 
@@ -74,3 +74,8 @@ The `individual` folder contains LLM-based test case outputs for 5 selected rule
 2. Quantized Mistral
 
 It also includes `llm_comparison_report.md`, which compares coverage, correctness, and completeness.
+
+
+## Evidence Screenshots
+
+Execution screenshots are included in the `screenshots/` folder. These screenshots show local validation output, forensic logging evidence, and the passing GitHub Actions workflow run.

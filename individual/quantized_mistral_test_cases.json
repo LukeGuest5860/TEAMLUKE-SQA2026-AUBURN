@@ -2,76 +2,80 @@
   {
     "test_case_id": "TC-LLM-001",
     "requirement_id": "REQ-117.130-001A",
-    "description": "Model output could not be parsed as JSON.",
-    "input_data": "Conduct hazard analysis",
-    "expected_output": "A valid JSON test case should be generated.",
+    "description": "Verify the execution of hazard analysis as per REQ-117.130-001A.",
+    "input_data": "Software system under test, relevant safety requirements and system specifications.",
+    "expected_output": "Detailed report of identified hazards, their potential causes, effects, and proposed risk mitigation strategies.",
     "steps": [
-      "Prompt the model.",
-      "Attempt to parse the response.",
-      "Record parse failure."
+      "Initialize the software system under test",
+      "Run the hazard analysis tool",
+      "Review the generated hazard analysis report",
+      "Compare the results with the expected outcomes based on safety requirements and system specifications"
     ],
-    "notes": "Parse error: Invalid control character at: line 4 column 76 (char 149). Raw output excerpt: {\n  \"test_case_id\": \"TC-LLM-001\",\n  \"requirement_id\": \"REQ-117.130-001A\",\n  \"description\": \"Verifying the conduct of hazard analysis according to REQ\u001b[3D\u001b[K\nREQ-117.130-001A.\",\n  \"input_data\": \"Document outlining the steps taken for hazard analysis.\",\n  \"expected_output\": \"A complete and detailed re",
+    "notes": "Assumptions include that the hazard analysis tool is functioning correctly, and all relevant safety requirements and system specifications are accurately documented.",
     "model_used": "Quantized Mistral via Ollama",
-    "raw_output_excerpt": "{\n  \"test_case_id\": \"TC-LLM-001\",\n  \"requirement_id\": \"REQ-117.130-001A\",\n  \"description\": \"Verifying the conduct of hazard analysis according to REQ\u001b[3D\u001b[K\nREQ-117.130-001A.\",\n  \"input_data\": \"Document outlining the steps taken for hazard analysis.\",\n  \"expected_output\": \"A complete and detailed re"
+    "raw_output_excerpt": "{\n  \"test_case_id\": \"TC-LLM-001\",\n  \"requirement_id\": \"REQ-117.130-001A\",\n  \"description\": \"Verify the execution of hazard analysis as per REQ-117.130-001A.\",\n  \"input_data\": \"Software system under test, relevant safety requirements and system specifications.\",\n  \"expected_output\": \"Detailed report "
   },
   {
     "test_case_id": "TC-LLM-002",
     "requirement_id": "REQ-117.130-001B",
-    "description": "Model output could not be parsed as JSON.",
-    "input_data": "Identify known hazards",
-    "expected_output": "A valid JSON test case should be generated.",
+    "description": "Verification of identifying known hazards as per REQ-117.130-001B",
+    "input_data": "Known hazard list provided by the system developer or manufacturer",
+    "expected_output": "All identified hazards should be listed and properly categorized",
     "steps": [
-      "Prompt the model.",
-      "Attempt to parse the response.",
-      "Record parse failure."
+      "Retrieve the known hazard list",
+      "Verify each hazard is listed",
+      "Check if each hazard is properly categorized"
     ],
-    "notes": "Parse error: Invalid control character at: line 4 column 76 (char 149). Raw output excerpt: {\n  \"test_case_id\": \"TC-LLM-002\",\n  \"requirement_id\": \"REQ-117.130-001B\",\n  \"description\": \"Verifying the identification of known hazards according t\u001b[1D\u001b[K\nto REQ-117.130-001B.\",\n  \"input_data\": \"Known hazard list provided by the software vendor or ident\u001b[5D\u001b[K\nidentified through previous risk asse",
+    "notes": "Assumption: The provided known hazard list is complete and accurate.",
     "model_used": "Quantized Mistral via Ollama",
-    "raw_output_excerpt": "{\n  \"test_case_id\": \"TC-LLM-002\",\n  \"requirement_id\": \"REQ-117.130-001B\",\n  \"description\": \"Verifying the identification of known hazards according t\u001b[1D\u001b[K\nto REQ-117.130-001B.\",\n  \"input_data\": \"Known hazard list provided by the software vendor or ident\u001b[5D\u001b[K\nidentified through previous risk asse"
+    "raw_output_excerpt": "{\n  \"test_case_id\": \"TC-LLM-002\",\n  \"requirement_id\": \"REQ-117.130-001B\",\n  \"description\": \"Verification of identifying known hazards as per REQ-117.130-001B\",\n  \"input_data\": \"Known hazard list provided by the system developer or manufacturer\",\n  \"expected_output\": \"All identified hazards should be"
   },
   {
     "test_case_id": "TC-LLM-003",
     "requirement_id": "REQ-117.130-001C",
-    "description": "Model output could not be parsed as JSON.",
-    "input_data": "Identify reasonably foreseeable hazards",
-    "expected_output": "A valid JSON test case should be generated.",
+    "description": "Verify that the software identifies reasonably foreseeable hazards as per REQ-117.130-001C.",
+    "input_data": "Input software application with known potential hazards.",
+    "expected_output": "The software should correctly identify and list the known potential hazards.",
     "steps": [
-      "Prompt the model.",
-      "Attempt to parse the response.",
-      "Record parse failure."
+      "Load the software application",
+      "Run the software to identify potential hazards",
+      "Compare the identified hazards with the known potential hazards"
     ],
-    "notes": "Parse error: Invalid control character at: line 4 column 76 (char 149). Raw output excerpt: {\n  \"test_case_id\": \"TC-LLM-003\",\n  \"requirement_id\": \"REQ-117.130-001C\",\n  \"description\": \"Verifying the identification of reasonably foreseeable ha\u001b[2D\u001b[K\nhazards as per REQ-117.130-001C.\",\n  \"input_data\": \"Input: The software's risk assessment document outlining p\u001b[1D\u001b[K\npotential hazards.\",\n  \"e",
+    "notes": "Assumption: The known potential hazards are accurately documented and provided for testing.",
     "model_used": "Quantized Mistral via Ollama",
-    "raw_output_excerpt": "{\n  \"test_case_id\": \"TC-LLM-003\",\n  \"requirement_id\": \"REQ-117.130-001C\",\n  \"description\": \"Verifying the identification of reasonably foreseeable ha\u001b[2D\u001b[K\nhazards as per REQ-117.130-001C.\",\n  \"input_data\": \"Input: The software's risk assessment document outlining p\u001b[1D\u001b[K\npotential hazards.\",\n  \"e"
+    "raw_output_excerpt": "{\n  \"test_case_id\": \"TC-LLM-003\",\n  \"requirement_id\": \"REQ-117.130-001C\",\n  \"description\": \"Verify that the software identifies reasonably foreseeable hazards as per REQ-117.130-001C.\",\n  \"input_data\": \"Input software application with known potential hazards.\",\n  \"expected_output\": \"The software sho"
   },
   {
     "test_case_id": "TC-LLM-004",
     "requirement_id": "REQ-117.130-001D",
-    "description": "Model output could not be parsed as JSON.",
-    "input_data": "Evaluate hazards using data, experience, reports",
-    "expected_output": "A valid JSON test case should be generated.",
+    "description": "Verifying the evaluation of hazards using data, experience, and reports as per REQ-117.130-001D.",
+    "input_data": "Hazard analysis report, operational data, incident reports, and any relevant technical documentation.",
+    "expected_output": "Identified hazards are properly evaluated and documented with appropriate risk assessments and mitigation strategies.",
     "steps": [
-      "Prompt the model.",
-      "Attempt to parse the response.",
-      "Record parse failure."
+      "Review the provided hazard analysis report for completeness and accuracy",
+      "Gather operational data, incident reports, and any relevant technical documentation",
+      "Cross-reference identified hazards from the report with the gathered data",
+      "Evaluate if the documented risk assessments and mitigation strategies are appropriate given the new information",
+      "Document any discrepancies or potential new hazards discovered"
     ],
-    "notes": "Parse error: Invalid control character at: line 4 column 76 (char 149). Raw output excerpt: {\n  \"test_case_id\": \"TC-LLM-004\",\n  \"requirement_id\": \"REQ-117.130-001D\",\n  \"description\": \"Verification of evaluating hazards using data, experience\u001b[10D\u001b[K\nexperience and reports as per REQ-117.130-001D.\",\n  \"input_data\": \"Data from various sources including user input, system log\u001b[3D\u001b[K\nlogs, and",
+    "notes": "Assumptions include that all provided documents are accurate and complete, and that the evaluation is based on a comprehensive understanding of the system's operation.",
     "model_used": "Quantized Mistral via Ollama",
-    "raw_output_excerpt": "{\n  \"test_case_id\": \"TC-LLM-004\",\n  \"requirement_id\": \"REQ-117.130-001D\",\n  \"description\": \"Verification of evaluating hazards using data, experience\u001b[10D\u001b[K\nexperience and reports as per REQ-117.130-001D.\",\n  \"input_data\": \"Data from various sources including user input, system log\u001b[3D\u001b[K\nlogs, and"
+    "raw_output_excerpt": "{\n  \"test_case_id\": \"TC-LLM-004\",\n  \"requirement_id\": \"REQ-117.130-001D\",\n  \"description\": \"Verifying the evaluation of hazards using data, experience, and reports as per REQ-117.130-001D.\",\n  \"input_data\": \"Hazard analysis report, operational data, incident reports, and any relevant technical docum"
   },
   {
     "test_case_id": "TC-LLM-005",
     "requirement_id": "REQ-117.130-001E",
-    "description": "Model output could not be parsed as JSON.",
-    "input_data": "Determine hazards requiring preventive controls",
-    "expected_output": "A valid JSON test case should be generated.",
+    "description": "Verify that the software identifies and determines hazards requiring preventive controls as per REQ-117.130-001E.",
+    "input_data": "Software input file containing potential hazard scenarios",
+    "expected_output": "A list of identified hazards with corresponding preventive controls",
     "steps": [
-      "Prompt the model.",
-      "Attempt to parse the response.",
-      "Record parse failure."
+      "Load the software and input file",
+      "Run the software to identify hazards",
+      "Review the output to ensure all identified hazards have preventive controls",
+      "Check if any potential hazard was missed without a preventive control"
     ],
-    "notes": "Parse error: Invalid control character at: line 4 column 76 (char 149). Raw output excerpt: {\n  \"test_case_id\": \"TC-LLM-005\",\n  \"requirement_id\": \"REQ-117.130-001E\",\n  \"description\": \"Verify the identification and determination of hazards re\u001b[2D\u001b[K\nrequiring preventive controls in accordance with REQ-117.130-001E.\",\n  \"input_data\": \"Software system design document containing hazard analysi",
+    "notes": "Assumption: The software is functioning correctly and follows the regulatory requirements. Also, the input file contains comprehensive hazard scenarios.",
     "model_used": "Quantized Mistral via Ollama",
-    "raw_output_excerpt": "{\n  \"test_case_id\": \"TC-LLM-005\",\n  \"requirement_id\": \"REQ-117.130-001E\",\n  \"description\": \"Verify the identification and determination of hazards re\u001b[2D\u001b[K\nrequiring preventive controls in accordance with REQ-117.130-001E.\",\n  \"input_data\": \"Software system design document containing hazard analysi"
+    "raw_output_excerpt": "{\n  \"test_case_id\": \"TC-LLM-005\",\n  \"requirement_id\": \"REQ-117.130-001E\",\n  \"description\": \"Verify that the software identifies and determines hazards requiring preventive controls as per REQ-117.130-001E.\",\n  \"input_data\": \"Software input file containing potential hazard scenarios\",\n  \"expected_out"
   }
 ]

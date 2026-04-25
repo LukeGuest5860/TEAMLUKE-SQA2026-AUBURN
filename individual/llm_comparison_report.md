@@ -19,8 +19,8 @@ Because this was run locally on macOS rather than CUDA/Colab, BitsAndBytes 4-bit
 
 | Model Configuration | Runtime Seconds |
 |---|---:|
-| Mistral regular | 47.01 |
-| Quantized Mistral | 47.38 |
+| Mistral regular | 47.44 |
+| Quantized Mistral | 44.84 |
 
 ## Coverage, Correctness, and Completeness
 

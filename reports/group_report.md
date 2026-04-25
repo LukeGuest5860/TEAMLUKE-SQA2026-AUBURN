@@ -39,3 +39,7 @@ Screenshots should show:
 3. The generated `logs/forensic.log` file.
 4. A successful GitHub Actions build.
 5. The uploaded GitHub Actions artifact named `cfr-vv-evidence`.
+
+## Evidence Screenshots
+
+The `screenshots/` folder contains evidence for the final project execution. These images show the local validation pass, forensic log output, repository state, and the successful GitHub Actions workflow run.
