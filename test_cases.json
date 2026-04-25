@@ -2,231 +2,213 @@
   {
     "test_case_id": "TC-001",
     "requirement_id": "REQ-117.130-001A",
-    "description": "Verify that the CFR analysis includes: Conduct hazard analysis.",
+    "description": "Verify that the parser captures the rule requiring a hazard analysis for each type of food manufactured, processed, packed, or held.",
     "input_data": {
-      "requirement_id": "REQ-117.130-001A",
-      "requirement_text": "Conduct hazard analysis",
-      "source": "21 CFR 117.130"
+      "source_file": "Input CFR File/CFR-117.130.md",
+      "requirement_text": "Conduct hazard analysis for each type of food"
     },
     "expected_output": {
-      "present": true,
+      "requirement_present": true,
       "parent": "REQ-117.130-001",
-      "atomic": true,
-      "matches_requirement": "Conduct hazard analysis"
+      "child_letter": "A",
+      "validation_result": "pass"
     },
     "steps": [
-      "Load requirements.json.",
-      "Find requirement_id REQ-117.130-001A.",
-      "Check that the description and parent mapping match the CFR rule.",
-      "Confirm that the rule can be validated as one atomic requirement."
+      "Load the parsed requirements.json file.",
+      "Search for requirement_id REQ-117.130-001A.",
+      "Confirm that the description refers to conducting a hazard analysis for each type of food.",
+      "Verify that the parent is REQ-117.130-001."
     ],
-    "notes": "Generated minimal V&V test case for selected CFR atomic rule."
+    "notes": "This checks that the main hazard analysis requirement was not skipped during parsing."
   },
   {
     "test_case_id": "TC-002",
     "requirement_id": "REQ-117.130-001B",
-    "description": "Verify that the CFR analysis includes: Identify known hazards.",
+    "description": "Verify that the system identifies known hazards as a required part of the hazard analysis.",
     "input_data": {
-      "requirement_id": "REQ-117.130-001B",
-      "requirement_text": "Identify known hazards",
-      "source": "21 CFR 117.130"
+      "source_file": "Input CFR File/CFR-117.130.md",
+      "requirement_text": "Identify known hazards"
     },
     "expected_output": {
-      "present": true,
-      "parent": "REQ-117.130-001",
-      "atomic": true,
-      "matches_requirement": "Identify known hazards"
+      "requirement_present": true,
+      "contains_keyword": "known hazards",
+      "validation_result": "pass"
     },
     "steps": [
-      "Load requirements.json.",
-      "Find requirement_id REQ-117.130-001B.",
-      "Check that the description and parent mapping match the CFR rule.",
-      "Confirm that the rule can be validated as one atomic requirement."
+      "Open requirements.json.",
+      "Locate REQ-117.130-001B.",
+      "Check that the requirement description includes known hazards.",
+      "Confirm the requirement is included in the selected atomic rule set."
     ],
-    "notes": "Generated minimal V&V test case for selected CFR atomic rule."
+    "notes": "This validates that known hazards are treated as their own atomic rule."
   },
   {
     "test_case_id": "TC-003",
     "requirement_id": "REQ-117.130-001C",
-    "description": "Verify that the CFR analysis includes: Identify reasonably foreseeable hazards.",
+    "description": "Verify that reasonably foreseeable hazards are extracted as a separate atomic requirement.",
     "input_data": {
-      "requirement_id": "REQ-117.130-001C",
-      "requirement_text": "Identify reasonably foreseeable hazards",
-      "source": "21 CFR 117.130"
+      "source_file": "Input CFR File/CFR-117.130.md",
+      "requirement_text": "Identify reasonably foreseeable hazards"
     },
     "expected_output": {
-      "present": true,
-      "parent": "REQ-117.130-001",
-      "atomic": true,
-      "matches_requirement": "Identify reasonably foreseeable hazards"
+      "requirement_present": true,
+      "contains_keyword": "reasonably foreseeable",
+      "validation_result": "pass"
     },
     "steps": [
-      "Load requirements.json.",
-      "Find requirement_id REQ-117.130-001C.",
-      "Check that the description and parent mapping match the CFR rule.",
-      "Confirm that the rule can be validated as one atomic requirement."
+      "Read the generated requirements.json file.",
+      "Find REQ-117.130-001C.",
+      "Compare its description to the CFR source text.",
+      "Confirm that it is not merged with the known hazards rule."
     ],
-    "notes": "Generated minimal V&V test case for selected CFR atomic rule."
+    "notes": "This checks atomicity because known hazards and reasonably foreseeable hazards should be separate checks."
   },
   {
     "test_case_id": "TC-004",
     "requirement_id": "REQ-117.130-001D",
-    "description": "Verify that the CFR analysis includes: Evaluate hazards using data, experience, reports.",
+    "description": "Verify that the hazard analysis must evaluate hazards using data, experience, illness data, scientific reports, or similar information.",
     "input_data": {
-      "requirement_id": "REQ-117.130-001D",
-      "requirement_text": "Evaluate hazards using data, experience, reports",
-      "source": "21 CFR 117.130"
+      "source_file": "Input CFR File/CFR-117.130.md",
+      "requirement_text": "Evaluate hazards using data, experience, reports"
     },
     "expected_output": {
-      "present": true,
-      "parent": "REQ-117.130-001",
-      "atomic": true,
-      "matches_requirement": "Evaluate hazards using data, experience, reports"
+      "requirement_present": true,
+      "evaluation_language_detected": true,
+      "validation_result": "pass"
     },
     "steps": [
       "Load requirements.json.",
-      "Find requirement_id REQ-117.130-001D.",
-      "Check that the description and parent mapping match the CFR rule.",
-      "Confirm that the rule can be validated as one atomic requirement."
+      "Search for REQ-117.130-001D.",
+      "Check that the rule describes evaluating hazards using supporting information.",
+      "Confirm that the rule remains under parent REQ-117.130-001."
     ],
-    "notes": "Generated minimal V&V test case for selected CFR atomic rule."
+    "notes": "This test is meant to catch missing evaluation language."
   },
   {
     "test_case_id": "TC-005",
     "requirement_id": "REQ-117.130-001E",
-    "description": "Verify that the CFR analysis includes: Determine hazards requiring preventive controls.",
+    "description": "Verify that the parser captures the requirement to determine which hazards require preventive controls.",
     "input_data": {
-      "requirement_id": "REQ-117.130-001E",
-      "requirement_text": "Determine hazards requiring preventive controls",
-      "source": "21 CFR 117.130"
+      "source_file": "Input CFR File/CFR-117.130.md",
+      "requirement_text": "Determine hazards requiring preventive controls"
     },
     "expected_output": {
-      "present": true,
-      "parent": "REQ-117.130-001",
-      "atomic": true,
-      "matches_requirement": "Determine hazards requiring preventive controls"
+      "requirement_present": true,
+      "contains_keyword": "preventive controls",
+      "validation_result": "pass"
     },
     "steps": [
-      "Load requirements.json.",
-      "Find requirement_id REQ-117.130-001E.",
-      "Check that the description and parent mapping match the CFR rule.",
-      "Confirm that the rule can be validated as one atomic requirement."
+      "Read requirements.json.",
+      "Locate REQ-117.130-001E.",
+      "Verify that preventive controls are mentioned in the description.",
+      "Confirm that the test case maps to the same requirement_id."
     ],
-    "notes": "Generated minimal V&V test case for selected CFR atomic rule."
+    "notes": "This checks one of the most important V&V requirements in the section."
   },
   {
     "test_case_id": "TC-006",
     "requirement_id": "REQ-117.130-001F",
-    "description": "Verify that the CFR analysis includes: Hazard analysis must be written.",
+    "description": "Verify that the hazard analysis must be written and not only performed informally.",
     "input_data": {
-      "requirement_id": "REQ-117.130-001F",
-      "requirement_text": "Hazard analysis must be written",
-      "source": "21 CFR 117.130"
+      "source_file": "Input CFR File/CFR-117.130.md",
+      "requirement_text": "Hazard analysis must be written"
     },
     "expected_output": {
-      "present": true,
-      "parent": "REQ-117.130-001",
-      "atomic": true,
-      "matches_requirement": "Hazard analysis must be written"
+      "requirement_present": true,
+      "documentation_required": true,
+      "validation_result": "pass"
     },
     "steps": [
-      "Load requirements.json.",
-      "Find requirement_id REQ-117.130-001F.",
-      "Check that the description and parent mapping match the CFR rule.",
-      "Confirm that the rule can be validated as one atomic requirement."
+      "Open requirements.json.",
+      "Search for REQ-117.130-001F.",
+      "Confirm that the description states the hazard analysis must be written.",
+      "Check that expected_structure.json includes child F under REQ-117.130-001."
     ],
-    "notes": "Generated minimal V&V test case for selected CFR atomic rule."
+    "notes": "This verifies the documentation requirement separately from the analysis requirement."
   },
   {
     "test_case_id": "TC-007",
     "requirement_id": "REQ-117.130-002A",
-    "description": "Verify that the CFR analysis includes: Biological hazards.",
+    "description": "Verify that biological hazards are included under hazard identification.",
     "input_data": {
-      "requirement_id": "REQ-117.130-002A",
-      "requirement_text": "Biological hazards",
-      "source": "21 CFR 117.130"
+      "source_file": "Input CFR File/CFR-117.130.md",
+      "requirement_text": "Biological hazards must be considered"
     },
     "expected_output": {
-      "present": true,
-      "parent": "REQ-117.130-002",
-      "atomic": true,
-      "matches_requirement": "Biological hazards"
+      "requirement_present": true,
+      "hazard_type": "biological",
+      "validation_result": "pass"
     },
     "steps": [
       "Load requirements.json.",
-      "Find requirement_id REQ-117.130-002A.",
-      "Check that the description and parent mapping match the CFR rule.",
-      "Confirm that the rule can be validated as one atomic requirement."
+      "Find REQ-117.130-002A.",
+      "Confirm that the rule identifies biological hazards.",
+      "Verify that the parent requirement is REQ-117.130-002."
     ],
-    "notes": "Generated minimal V&V test case for selected CFR atomic rule."
+    "notes": "This checks the biological hazard category in the hazard identification section."
   },
   {
     "test_case_id": "TC-008",
     "requirement_id": "REQ-117.130-002B",
-    "description": "Verify that the CFR analysis includes: Chemical hazards.",
+    "description": "Verify that chemical hazards are included as a hazard category that must be considered.",
     "input_data": {
-      "requirement_id": "REQ-117.130-002B",
-      "requirement_text": "Chemical hazards",
-      "source": "21 CFR 117.130"
+      "source_file": "Input CFR File/CFR-117.130.md",
+      "requirement_text": "Chemical hazards must be considered"
     },
     "expected_output": {
-      "present": true,
-      "parent": "REQ-117.130-002",
-      "atomic": true,
-      "matches_requirement": "Chemical hazards"
+      "requirement_present": true,
+      "hazard_type": "chemical",
+      "validation_result": "pass"
     },
     "steps": [
-      "Load requirements.json.",
-      "Find requirement_id REQ-117.130-002B.",
-      "Check that the description and parent mapping match the CFR rule.",
-      "Confirm that the rule can be validated as one atomic requirement."
+      "Open requirements.json.",
+      "Search for REQ-117.130-002B.",
+      "Confirm that the description refers to chemical hazards.",
+      "Check that the rule is included in test_cases.json."
     ],
-    "notes": "Generated minimal V&V test case for selected CFR atomic rule."
+    "notes": "This test confirms that chemical hazards are not skipped or mislabeled."
   },
   {
     "test_case_id": "TC-009",
     "requirement_id": "REQ-117.130-002C",
-    "description": "Verify that the CFR analysis includes: Physical hazards.",
+    "description": "Verify that physical hazards are represented as a required hazard category.",
     "input_data": {
-      "requirement_id": "REQ-117.130-002C",
-      "requirement_text": "Physical hazards",
-      "source": "21 CFR 117.130"
+      "source_file": "Input CFR File/CFR-117.130.md",
+      "requirement_text": "Physical hazards must be considered"
     },
     "expected_output": {
-      "present": true,
-      "parent": "REQ-117.130-002",
-      "atomic": true,
-      "matches_requirement": "Physical hazards"
+      "requirement_present": true,
+      "hazard_type": "physical",
+      "validation_result": "pass"
     },
     "steps": [
-      "Load requirements.json.",
-      "Find requirement_id REQ-117.130-002C.",
-      "Check that the description and parent mapping match the CFR rule.",
-      "Confirm that the rule can be validated as one atomic requirement."
+      "Read requirements.json.",
+      "Locate REQ-117.130-002C.",
+      "Verify that physical hazards appear in the description.",
+      "Confirm that the generated expected structure includes child C for REQ-117.130-002."
     ],
-    "notes": "Generated minimal V&V test case for selected CFR atomic rule."
+    "notes": "This validates the third major hazard category."
   },
   {
     "test_case_id": "TC-010",
     "requirement_id": "REQ-117.130-003A",
-    "description": "Verify that the CFR analysis includes: Evaluate identified hazards.",
+    "description": "Verify that identified hazards are evaluated as part of the hazard evaluation section.",
     "input_data": {
-      "requirement_id": "REQ-117.130-003A",
-      "requirement_text": "Evaluate identified hazards",
-      "source": "21 CFR 117.130"
+      "source_file": "Input CFR File/CFR-117.130.md",
+      "requirement_text": "Evaluate identified hazards"
     },
     "expected_output": {
-      "present": true,
+      "requirement_present": true,
       "parent": "REQ-117.130-003",
-      "atomic": true,
-      "matches_requirement": "Evaluate identified hazards"
+      "hazard_evaluation_required": true,
+      "validation_result": "pass"
     },
     "steps": [
       "Load requirements.json.",
-      "Find requirement_id REQ-117.130-003A.",
-      "Check that the description and parent mapping match the CFR rule.",
-      "Confirm that the rule can be validated as one atomic requirement."
+      "Search for REQ-117.130-003A.",
+      "Confirm that the description requires evaluation of identified hazards.",
+      "Run validate_outputs.py to verify the requirement and test case mapping passes."
     ],
-    "notes": "Generated minimal V&V test case for selected CFR atomic rule."
+    "notes": "This connects the selected rule set to the hazard evaluation parent requirement."
   }
 ]
