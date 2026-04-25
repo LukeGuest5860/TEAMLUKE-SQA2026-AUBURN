@@ -1,0 +1,90 @@
+2026-04-25 02:28:28,850 | INFO | generate_requirements | parent_detected | parent=REQ-117.130-001 | title=Requirement for a hazard analysis
+2026-04-25 02:28:28,850 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001A | parent=REQ-117.130-001
+2026-04-25 02:28:28,850 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001B | parent=REQ-117.130-001
+2026-04-25 02:28:28,850 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001C | parent=REQ-117.130-001
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001D | parent=REQ-117.130-001
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001E | parent=REQ-117.130-001
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001F | parent=REQ-117.130-001
+2026-04-25 02:28:28,851 | INFO | generate_requirements | parent_detected | parent=REQ-117.130-002 | title=Hazard identification
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_skipped | reason=no_rule_match | line=- (1) Known or reasonably foreseeable hazards include:
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-002A | parent=REQ-117.130-002
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-002B | parent=REQ-117.130-002
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-002C | parent=REQ-117.130-002
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_skipped | reason=no_rule_match | line=- (2) Consider hazards for origin:
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_skipped | reason=duplicate_child_letter | requirement_id=REQ-117.130-002A | line=- Occur naturally → A
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_skipped | reason=duplicate_child_letter | requirement_id=REQ-117.130-002B | line=- Unintentionally introduced → B
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_skipped | reason=duplicate_child_letter | requirement_id=REQ-117.130-002C | line=- Intentionally introduced for economic gain → C
+2026-04-25 02:28:28,851 | INFO | generate_requirements | parent_detected | parent=REQ-117.130-003 | title=Hazard evaluation
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003A | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003A1 | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003A2 | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B1 | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B2 | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B3 | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B4 | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B5 | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B6 | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B7 | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B8 | parent=REQ-117.130-003
+2026-04-25 02:28:28,851 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B9 | parent=REQ-117.130-003
+2026-04-25 02:28:28,852 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B10 | parent=REQ-117.130-003
+2026-04-25 02:28:28,852 | INFO | generate_requirements | parse_complete | requirements=23 | parents=3 | skipped=5
+2026-04-25 02:28:28,852 | INFO | generate_requirements | output_written | requirements_file=requirements.json | structure_file=expected_structure.json
+2026-04-25 02:28:28,913 | INFO | generate_test_cases | test_case_created | test_case_id=TC-001 | requirement_id=REQ-117.130-001A
+2026-04-25 02:28:28,913 | INFO | generate_test_cases | test_case_created | test_case_id=TC-002 | requirement_id=REQ-117.130-001B
+2026-04-25 02:28:28,913 | INFO | generate_test_cases | test_case_created | test_case_id=TC-003 | requirement_id=REQ-117.130-001C
+2026-04-25 02:28:28,914 | INFO | generate_test_cases | test_case_created | test_case_id=TC-004 | requirement_id=REQ-117.130-001D
+2026-04-25 02:28:28,914 | INFO | generate_test_cases | test_case_created | test_case_id=TC-005 | requirement_id=REQ-117.130-001E
+2026-04-25 02:28:28,914 | INFO | generate_test_cases | test_case_created | test_case_id=TC-006 | requirement_id=REQ-117.130-001F
+2026-04-25 02:28:28,914 | INFO | generate_test_cases | test_case_created | test_case_id=TC-007 | requirement_id=REQ-117.130-002A
+2026-04-25 02:28:28,914 | INFO | generate_test_cases | test_case_created | test_case_id=TC-008 | requirement_id=REQ-117.130-002B
+2026-04-25 02:28:28,914 | INFO | generate_test_cases | test_case_created | test_case_id=TC-009 | requirement_id=REQ-117.130-002C
+2026-04-25 02:28:28,914 | INFO | generate_test_cases | test_case_created | test_case_id=TC-010 | requirement_id=REQ-117.130-003A
+2026-04-25 02:28:28,914 | INFO | generate_test_cases | test_generation_complete | count=10 | output=test_cases.json
+2026-04-25 02:28:28,973 | INFO | validate_outputs | validation_passed | requirements=10 | expected=10 | test_cases=10
+2026-04-24 21:30:32,137 | INFO | generate_requirements | parent_detected | parent=REQ-117.130-001 | title=Requirement for a hazard analysis
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001A | parent=REQ-117.130-001
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001B | parent=REQ-117.130-001
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001C | parent=REQ-117.130-001
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001D | parent=REQ-117.130-001
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001E | parent=REQ-117.130-001
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-001F | parent=REQ-117.130-001
+2026-04-24 21:30:32,137 | INFO | generate_requirements | parent_detected | parent=REQ-117.130-002 | title=Hazard identification
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_skipped | reason=no_rule_match | line=- (1) Known or reasonably foreseeable hazards include:
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-002A | parent=REQ-117.130-002
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-002B | parent=REQ-117.130-002
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-002C | parent=REQ-117.130-002
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_skipped | reason=no_rule_match | line=- (2) Consider hazards for origin:
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_skipped | reason=duplicate_child_letter | requirement_id=REQ-117.130-002A | line=- Occur naturally → A
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_skipped | reason=duplicate_child_letter | requirement_id=REQ-117.130-002B | line=- Unintentionally introduced → B
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_skipped | reason=duplicate_child_letter | requirement_id=REQ-117.130-002C | line=- Intentionally introduced for economic gain → C
+2026-04-24 21:30:32,137 | INFO | generate_requirements | parent_detected | parent=REQ-117.130-003 | title=Hazard evaluation
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003A | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003A1 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003A2 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B1 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B2 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B3 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B4 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B5 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B6 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B7 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B8 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B9 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | requirement_extracted | requirement_id=REQ-117.130-003B10 | parent=REQ-117.130-003
+2026-04-24 21:30:32,137 | INFO | generate_requirements | parse_complete | requirements=23 | parents=3 | skipped=5
+2026-04-24 21:30:32,138 | INFO | generate_requirements | output_written | requirements_file=requirements.json | structure_file=expected_structure.json
+2026-04-24 21:30:43,590 | INFO | generate_test_cases | test_case_created | test_case_id=TC-001 | requirement_id=REQ-117.130-001A
+2026-04-24 21:30:43,590 | INFO | generate_test_cases | test_case_created | test_case_id=TC-002 | requirement_id=REQ-117.130-001B
+2026-04-24 21:30:43,590 | INFO | generate_test_cases | test_case_created | test_case_id=TC-003 | requirement_id=REQ-117.130-001C
+2026-04-24 21:30:43,590 | INFO | generate_test_cases | test_case_created | test_case_id=TC-004 | requirement_id=REQ-117.130-001D
+2026-04-24 21:30:43,590 | INFO | generate_test_cases | test_case_created | test_case_id=TC-005 | requirement_id=REQ-117.130-001E
+2026-04-24 21:30:43,590 | INFO | generate_test_cases | test_case_created | test_case_id=TC-006 | requirement_id=REQ-117.130-001F
+2026-04-24 21:30:43,590 | INFO | generate_test_cases | test_case_created | test_case_id=TC-007 | requirement_id=REQ-117.130-002A
+2026-04-24 21:30:43,590 | INFO | generate_test_cases | test_case_created | test_case_id=TC-008 | requirement_id=REQ-117.130-002B
+2026-04-24 21:30:43,590 | INFO | generate_test_cases | test_case_created | test_case_id=TC-009 | requirement_id=REQ-117.130-002C
+2026-04-24 21:30:43,590 | INFO | generate_test_cases | test_case_created | test_case_id=TC-010 | requirement_id=REQ-117.130-003A
+2026-04-24 21:30:43,591 | INFO | generate_test_cases | test_generation_complete | count=10 | output=test_cases.json
+2026-04-24 21:31:05,865 | INFO | validate_outputs | validation_passed | requirements=10 | expected=10 | test_cases=10

@@ -1,0 +1,62 @@
+[
+  {
+    "requirement_id": "REQ-117.130-001A",
+    "description": "Conduct hazard analysis",
+    "source": "21 CFR 117.130",
+    "parent": "REQ-117.130-001"
+  },
+  {
+    "requirement_id": "REQ-117.130-001B",
+    "description": "Identify known hazards",
+    "source": "21 CFR 117.130",
+    "parent": "REQ-117.130-001"
+  },
+  {
+    "requirement_id": "REQ-117.130-001C",
+    "description": "Identify reasonably foreseeable hazards",
+    "source": "21 CFR 117.130",
+    "parent": "REQ-117.130-001"
+  },
+  {
+    "requirement_id": "REQ-117.130-001D",
+    "description": "Evaluate hazards using data, experience, reports",
+    "source": "21 CFR 117.130",
+    "parent": "REQ-117.130-001"
+  },
+  {
+    "requirement_id": "REQ-117.130-001E",
+    "description": "Determine hazards requiring preventive controls",
+    "source": "21 CFR 117.130",
+    "parent": "REQ-117.130-001"
+  },
+  {
+    "requirement_id": "REQ-117.130-001F",
+    "description": "Hazard analysis must be written",
+    "source": "21 CFR 117.130",
+    "parent": "REQ-117.130-001"
+  },
+  {
+    "requirement_id": "REQ-117.130-002A",
+    "description": "Biological hazards",
+    "source": "21 CFR 117.130",
+    "parent": "REQ-117.130-002"
+  },
+  {
+    "requirement_id": "REQ-117.130-002B",
+    "description": "Chemical hazards",
+    "source": "21 CFR 117.130",
+    "parent": "REQ-117.130-002"
+  },
+  {
+    "requirement_id": "REQ-117.130-002C",
+    "description": "Physical hazards",
+    "source": "21 CFR 117.130",
+    "parent": "REQ-117.130-002"
+  },
+  {
+    "requirement_id": "REQ-117.130-003A",
+    "description": "Evaluate identified hazards",
+    "source": "21 CFR 117.130",
+    "parent": "REQ-117.130-003"
+  }
+]
