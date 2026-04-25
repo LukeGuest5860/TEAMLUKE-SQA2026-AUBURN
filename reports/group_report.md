@@ -6,7 +6,7 @@ For this project, our group created a GitHub repository for the 21 CFR 117.130 V
 
 ## Task 0: Project Repo and CI
 
-We created a repo named `TEAMNAME-SQA2026-AUBURN`. The repo includes all input files, scripts, outputs, reports, and a GitHub Actions workflow. The workflow is similar to Assignment 6 because it automatically runs the scripts on push and pull request, then prints and uploads the evidence files.
+We (I am speaking in group terminology, as I planned the project before deciding to work solo) created a repo named `TEAMLUKE-SQA2026-AUBURN`. The repo includes all input files, scripts, outputs, reports, and a GitHub Actions workflow. The workflow is similar to Assignment 6 because it automatically runs the scripts on push and pull request, then prints and uploads the evidence files.
 
 ## Task 1: Extract and Structure Requirements
 
