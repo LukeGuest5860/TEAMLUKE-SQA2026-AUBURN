@@ -1,0 +1,30 @@
+name: CFR V&V Validation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate requirements
+        run: python scripts/generate_requirements.py -i "Input CFR File/CFR-117.130.md" -o requirements.json -c "21 CFR 117.130" -s expected_structure.json -n 10
+
+      - name: Generate test cases
+        run: python scripts/generate_test_cases.py -r requirements.json -s expected_structure.json -o test_cases.json
+
+      - name: Validate outputs
+        run: python scripts/validate_outputs.py --requirements requirements.json --structure expected_structure.json --test-cases test_cases.json
+
+      - name: Show forensic log
+        run: cat logs/forensic.log
